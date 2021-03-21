@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+
+/* reseta a configuracao */
+* {
+  box-sizing: border-box;
+}
+
+.calculadora input, 
+.btn
+{
+  font-family: 'Space Mono';
+}
+
+/* Adiciona espacamento */
+body          {
+  background: #F6F6F6;
+  padding-bottom: 30px;
+  padding-top: 30px;  
+}
+
+/* limita o width no centro */
+.calculadora   {
+  max-width: 400px;
+  margin: 0 auto;
+  border: 2px solid #111;
+  border-radius: 5px;
+}
+
+input {
+  /* reseta os estilos na forma basica */
+  background: none;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  padding: 20px 10px;
+  width: 100%;
+  border-bottom: 2px solid #111;
+  color: #333;
+  text-align: right;
+  font-size: 40px;
+  border-radius: 0;
+}
+
+.btn, .btn-limpa, .op, .btn-igual, .btn-zero {
+  background: rgba(0, 0, 0, 0.5); /* fundo claro com opacidade 50% */
+  border: 1px solid #111; /* borda preta */
+  padding: 20px;
+  color: #EEE;
+  border-radius: 5px; /* cantos arredondados */
+  font-size: 22px;
+  cursor: pointer; /* aparece icone para clicar */
+  text-align: center;
+}
+
+.botoes{
+  /* pequeno espaçamento dentro de um contêiner */
+  padding: 20px;
+
+  display: grid;
+
+  /* criando 4 colunas */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  /* adiciona a lacuna da grade */
+  grid-gap: 15px;
+}
+
+/* estende por 3 colunas */
+.btn-zero,
+.btn-limpa   {
+  grid-column: span 3;
+  font-size: 22px;
+  text-align: center;
+}
+
+.btn-limpa   {
+  background: #3572DB;
+}
+
+.btn-igual {
+  background: #28D060;
+}
