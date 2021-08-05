@@ -1,0 +1,13 @@
+.container{
+    width:100%;
+    float:left;
+}
+
+.bloco{
+    float:left; 
+    width: 75px;
+    margin: 20px 1.5333333%; 
+    height: 75px;
+    background-color:aqua;
+    border:1px solid red;
+}

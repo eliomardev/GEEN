@@ -1,0 +1,24 @@
+
+.principal{
+    width:100%;
+    float:left;
+}
+
+.bloco{
+    float:left; 
+    width: 40%;
+    margin: 20px; 
+    height: normal;
+}
+
+.principal1{
+    width:100%;
+    box-align: center;
+}
+
+.bloco1{
+    align-items: center;
+    width: 40%;
+    margin: 20px; 
+    height: normal;
+}

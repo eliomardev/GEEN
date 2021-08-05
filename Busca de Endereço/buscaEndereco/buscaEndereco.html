@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Busca de Endereço</title>
+
+    <link rel="stylesheet" type="text/css" href="buscaEndereco.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style media="screen">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Comic Sans MS';
+            transition: all .2s linear;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="caixa">
+            <div class="busca"><h3>Busca de Endereço</h3></div>
+            <div class="espaco"></div>
+            <div class="cep"><label for="cep">Cep</label></div>
+            <div class="inputcep"><input type="search" name="cep" id="cep"/></div>
+            <div class="espaco"></div>
+            <div class="btn"><button type="button" name="btnfecha" id="btnfecha"><i class="fas fa-search"></i><b>&nbsp;Buscar</b></button></div>
+        </div>
+    </div>
+
+    <!--POP UP-->
+    <div class="model-container">
+        <div class="model">
+            <div class="topo">
+                Endereço
+                <i id="close1" class="fas fa-times"></i>
+            </div>
+            <div class="espaco"></div>
+            <div class="col">
+                <div class="row"><label class="label">Logradouro</label></div>
+                <div class="row"><input name="rua" type="text" id="rua" value="" size="10" maxlength="9" /></div>
+                <div class="espaco"></div>
+                <div class="row"><label class="label">Bairro:</label></div>
+                <div class="row"><input name="bairro" type="text" id="bairro" size="40" /></div>
+                <div class="espaco"></div>
+                <div class="row"><label class="label">Estado:</label></div>
+                <div class="row"><input name="uf" type="text" id="uf" size="2" /></div>
+            </div>
+            <div class="col">
+                <div class="row"><label class="label">Complemento</label></div>
+                <div class="row"><input name="comp" type="text" id="complemento" size="60" /></div>
+                <div class="espaco"></div>
+                <div class="row"><label class="label">Localidade</label></div>
+                <div class="row"><input name="cidade" type="text" id="cidade" size="40" /></div>
+                <div class="espaco"></div>
+                <div class="row"><label class="label">DDD:</label></div>
+                <div class="row"><input name="ddd" type="text" id="ddd" size="8" /></div>
+                <div class="espaco"></div>
+            </div>
+            <div class="btnclose"><button type="button" name="close" id="close">Fechar</button></div>
+
+        </div>
+    </div>
+
+</body>
+<script type="text/javascript" src="jquery.js" charset="utf-8"></script>
+<script type="text/javascript" src="buscaEndereco.js" charset="utf-8"></script>
+</html>
